@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Cadastro de Férias</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="./style.css">
+  <!--ICONSCOUT-->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+
+        <!-- Header -->
+        <header id="header">
+          <a href="../../index.html" class="logo"><strong>Painel</strong> de controle</a>
+
+        </header>
+
+        <!-- Content -->
+        <section>
+          <header class="main">
+            <h1>Cadastro de Férias</h1>
+          </header>
+
+          <hr class="major" />
+
+          <table id="userTable" class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Cadastrar férias</th>
+              </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+          </table>
+
+        </section>
+
+        <div id="modalFerias" class="modalPoint">
+          <button id="closeModal" onclick="closeModal()" class="btnClose"><i class="uil uil-multiply"></i></button>
+          
+          <span id="nameUser"></span>
+
+          <form id="form">
+
+            <br><p>Data De Início:<input type="date" name="inicio" id="inicio" placeholder="inicio" class="input-date"><br>
+            <p>Data De Fim:<input type="date" name="fim" id="fim" placeholder="fim" class="input-date"><br>
+
+            <br><span id="diasFerias"></span><br>
+
+            <br><button type="submit">Enviar</button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+          <form method="post" action="#">
+            <input type="text" name="query" id="query" placeholder="Pesquisar" />
+          </form>
+        </section>
+
+        <!-- Menu -->
+        <nav id="menu">
+          <header class="major">
+            <h2>Dashboard</h2>
+          </header>
+          <ul>
+            <li><a href="../cadUser/index.html">Cadastro</a></li>
+            <li><a href="generic.html">Financeiro</a></li>
+            <li><a href="elements.html">Relatórios</a></li>
+            <li><a class="active" href="elements.html">Férias</a></li>
+            <li><a href="./../Ausencias/index.html">Ausência</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/jquery.min.js"></script>
+  <script src="../../assets/js/browser.min.js"></script>
+  <script src="../../assets/js/breakpoints.min.js"></script>
+  <script src="../../assets/js/util.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="./mongodb.js"></script>
+  <script src="./postFerias.js"></script>
+
+</body>
+
+</html>
